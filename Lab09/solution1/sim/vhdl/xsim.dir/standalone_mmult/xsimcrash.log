@@ -1,0 +1,39 @@
+Exception at PC 0x00007FFB683ABB93
+Printing stacktrace...
+
+Unable to capture context for thread 47768 in process 22812, can not generate back trace
+Unable to capture context for thread 28388 in process 22812, can not generate back trace
+Unable to capture context for thread 55888 in process 22812, can not generate back trace
+Exception at PC 0x00007FFC5990478C
+Unable to capture context for thread 13984 in process 22812, can not generate back trace
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+[0]  [0x00007FFB683ABB93]
+[1]  [0x00007FFB683ABB93]
+[2]  [0x00007FFB683AB4A1]
+[3]  [0x00007FFB683AB459]
+[4]  [0x00007FFB683919FE]
+[5]  [0x00007FFB68390ED1]
+[6]  [0x00007FFB68390D76]
+[7]  [0x00007FFB683379F6]
+[8]  [0x00007FFB68327AFB]
+[9]  [0x00007FFB6844E90A]
+[10]  [0x00007FFB68469F87]
+[11]  [0x00007FFB6846A05F]
+[12] (BaseThreadInitThunk+0x10) [0x00007FFC5AB954E0]
+[13] (RtlUserThreadStart+0x2b) [0x00007FFC5BDA485B]
+Done
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C
+Exception at PC 0x00007FFC5990478C

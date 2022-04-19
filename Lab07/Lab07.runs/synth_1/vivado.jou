@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Mar 13 12:20:41 2022
+# Process ID: 9956
+# Current directory: D:/CENG3430/Lab07/Lab07.runs/synth_1
+# Command line: vivado.exe -log stopwatch_system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stopwatch_system_wrapper.tcl
+# Log file: D:/CENG3430/Lab07/Lab07.runs/synth_1/stopwatch_system_wrapper.vds
+# Journal file: D:/CENG3430/Lab07/Lab07.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch_system_wrapper.tcl -notrace

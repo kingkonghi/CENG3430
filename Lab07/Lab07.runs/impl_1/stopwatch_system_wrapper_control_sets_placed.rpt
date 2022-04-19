@@ -1,0 +1,109 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Mar 13 12:21:46 2022
+| Host         : DESKTOP-2D4IHUT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file stopwatch_system_wrapper_control_sets_placed.rpt
+| Design       : stopwatch_system_wrapper
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    41 |
+| Unused register locations in slices containing registers |    62 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             113 |           36 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             129 |           36 |
+| Yes          | No                    | No                     |             330 |           77 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             126 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                       Clock Signal                      |                                                                             Enable Signal                                                                             |                                                                 Set/Reset Signal                                                                 | Slice Load Count | Bel Load Count |
++---------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/bresp_push                               |                                                                                                                                                  |                1 |              2 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                       | stopwatch_system_i/rst_ps7_0_50M/U0/EXT_LPF/lpf_int                                                                                              |                2 |              4 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_wrap_reg[0]                    | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axlen_cnt_reg[7] |                1 |              4 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                       | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_valid_i_reg_0                |                2 |              4 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                       | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_ready_i_reg_0                |                2 |              4 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[3][0]                   | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[7] |                2 |              4 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/rst_ps7_0_50M/U0/SEQ/seq_cnt_en                                                                                                                    | stopwatch_system_i/rst_ps7_0_50M/U0/SEQ/SEQ_COUNTER/clear                                                                                        |                1 |              6 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/mhandshake_r                                        | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/SR[0]               |                2 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/p_1_in[3]                                                                         | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                1 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr[0]_i_1_n_0 |                                                                                                                                                  |                2 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/wrap_boundary_axaddr_r_reg[11][0]     |                                                                                                                                                  |                4 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axaddr_incr_reg[11]                   |                                                                                                                                                  |                2 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/E[0]                                  |                                                                                                                                                  |                4 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[31]_i_1_n_0                                                              | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                2 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[23]_i_1_n_0                                                              | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                1 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[15]_i_1_n_0                                                              | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                1 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/p_1_in[31]                                                                        | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                1 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/p_1_in[23]                                                                        | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                1 |              8 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/p_1_in[15]                                                                        | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                1 |              8 |
+|  clk_IBUF_BUFG                                          |                                                                                                                                                                       |                                                                                                                                                  |                4 |             10 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                       | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                4 |             11 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_push_r                                            |                                                                                                                                                  |                4 |             13 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/p_1_in                                               |                                                                                                                                                  |                2 |             14 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                                  |                2 |             14 |
+|  clk_IBUF_BUFG                                          |                                                                                                                                                                       | stopwatch_system_i/stopwatch_controller_0/U0/ssd_inst/count[16]_i_1_n_0                                                                          |                4 |             16 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/axlen_cnt_reg[3][0]                   |                                                                                                                                                  |                7 |             16 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_wrap_reg[0]                    |                                                                                                                                                  |                6 |             16 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_2_n_0                                                               | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                5 |             16 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/b_push                                |                                                                                                                                                  |                5 |             20 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/m_payload_i_reg[0]_1[0]               |                                                                                                                                                  |                6 |             28 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/s_axi_arready                                       |                                                                                                                                                  |                7 |             28 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/s_axi_awready                                       |                                                                                                                                                  |                6 |             28 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/E[0]                                  |                                                                                                                                                  |                7 |             28 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/axi_rdata[31]_i_1_n_0                                                             | stopwatch_system_i/stopwatch_controller_0/U0/stopwatch_controller_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0                                          |                9 |             32 |
+|  clk_IBUF_BUFG                                          | stopwatch_system_i/stopwatch_controller_0/U0/sel                                                                                                                      |                                                                                                                                                  |                8 |             32 |
+|  clk_IBUF_BUFG                                          |                                                                                                                                                                       | stopwatch_system_i/stopwatch_controller_0/U0/sel                                                                                                 |                8 |             32 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/wr_en0                               |                                                                                                                                                  |                9 |             34 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/p_1_in                                               |                                                                                                                                                  |                7 |             47 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/skid_buffer_reg[0]_0                                 |                                                                                                                                                  |                7 |             47 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                       | stopwatch_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1                                     |               14 |             58 |
+|  stopwatch_system_i/processing_system7_0/inst/FCLK_CLK0 |                                                                                                                                                                       |                                                                                                                                                  |               33 |            104 |
++---------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     5 |
+| 6      |                     1 |
+| 8      |                    12 |
+| 10     |                     1 |
+| 11     |                     1 |
+| 13     |                     1 |
+| 14     |                     2 |
+| 16+    |                    17 |
++--------+-----------------------+
+
+

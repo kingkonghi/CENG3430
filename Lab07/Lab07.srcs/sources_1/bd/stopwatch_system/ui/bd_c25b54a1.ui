@@ -1,0 +1,36 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 40 -defaultsOSRD
+preplace port ssdcat -pg 1 -y 400 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 60 -defaultsOSRD
+preplace port clk -pg 1 -y 450 -defaultsOSRD
+preplace portBus ssd -pg 1 -y 420 -defaultsOSRD
+preplace portBus btn -pg 1 -y 440 -defaultsOSRD
+preplace portBus led -pg 1 -y 440 -defaultsOSRD
+preplace portBus switch -pg 1 -y 460 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -y 350 -defaultsOSRD
+preplace inst stopwatch_controller_0 -pg 1 -lvl 3 -y 420 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 310 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 40 NJ 40 NJ
+preplace netloc btn_1 1 0 3 NJ 440 NJ 440 710J
+preplace netloc stopwatch_controller_0_led 1 3 1 NJ
+preplace netloc switch_1 1 0 3 NJ 460 NJ 460 730J
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 420
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 250 410
+preplace netloc stopwatch_controller_0_ssd 1 3 1 NJ
+preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 1 1 410
+preplace netloc clk_1 1 0 3 NJ 450 NJ 450 700J
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 60 NJ 60 NJ
+preplace netloc stopwatch_controller_0_ssdcat 1 3 1 NJ
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 440 470 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 260 430 180 720
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 700
+levelinfo -pg 1 0 220 570 820 930 -top 0 -bot 510
+",
+}
+{
+   da_axi4_cnt: "1",
+   da_ps7_cnt: "1",
+}

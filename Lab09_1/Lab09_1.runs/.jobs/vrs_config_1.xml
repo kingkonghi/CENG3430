@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_HLS_accel_1_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_HLS_accel_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_dma_1_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_axi_dma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xbar_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xbar_1_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_timer_1_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_axi_timer_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_proc_sys_reset_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_proc_sys_reset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_processing_system7_1_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_processing_system7_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xlconcat_1_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_xlconcat_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_pc_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_us_0_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_us_1_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_pc_1_synth_1" LaunchDir="D:/CENG3430/Lab09_1/Lab09_1.runs/system_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

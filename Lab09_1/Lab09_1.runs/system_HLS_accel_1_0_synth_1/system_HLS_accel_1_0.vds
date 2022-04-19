@@ -1,0 +1,967 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Mar 27 01:36:03 2022
+# Process ID: 34152
+# Current directory: D:/CENG3430/Lab09_1/Lab09_1.runs/system_HLS_accel_1_0_synth_1
+# Command line: vivado.exe -log system_HLS_accel_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_HLS_accel_1_0.tcl
+# Log file: D:/CENG3430/Lab09_1/Lab09_1.runs/system_HLS_accel_1_0_synth_1/system_HLS_accel_1_0.vds
+# Journal file: D:/CENG3430/Lab09_1/Lab09_1.runs/system_HLS_accel_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_HLS_accel_1_0.tcl -notrace
+Command: synth_design -top system_HLS_accel_1_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 55668 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 330.301 ; gain = 120.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_HLS_accel_1_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/synth/system_HLS_accel_1_0.vhd:99]
+INFO: [Synth 8-3491] module 'HLS_accel' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:12' bound to instance 'U0' of component 'HLS_accel' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/synth/system_HLS_accel_1_0.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:58]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:134]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:137]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:226]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:230]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:235]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:277]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:279]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:681]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:704]
+INFO: [Synth 8-3491] module 'HLS_accel_CONTROL_BUS_s_axi' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_CONTROL_BUS_s_axi.vhd:12' bound to instance 'HLS_accel_CONTROL_BUS_s_axi_U' of component 'HLS_accel_CONTROL_BUS_s_axi' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:983]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_CONTROL_BUS_s_axi' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_CONTROL_BUS_s_axi.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_CONTROL_BUS_s_axi' (1#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_CONTROL_BUS_s_axi.vhd:68]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_0_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1014]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:92]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0_ram' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:13' bound to instance 'HLS_accel_a_0_ram_U' of component 'HLS_accel_a_0_ram' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_a_0_ram' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_a_0_ram' (2#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_a_0' (3#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:92]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_1_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1028]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_2_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1042]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_3_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1056]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_4_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1070]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_5_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1084]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_6_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1098]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_7_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1112]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_8_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1126]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_9_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1140]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_10_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1154]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_11_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1168]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_12_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1182]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_13_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1196]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_14_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1210]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_15_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1224]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_16_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1238]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_17_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1252]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_18_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1266]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_19_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1280]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_20_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1294]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_21_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1308]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_22_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1322]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_23_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1336]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_24_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1350]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_25_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1364]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_26_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1378]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_27_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1392]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_28_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1406]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_29_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1420]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_30_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1434]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'a_31_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1448]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_0_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1462]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_1_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1476]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_2_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1490]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_3_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1504]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_4_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1518]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_5_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1532]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_6_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1546]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_7_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1560]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_8_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1574]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_9_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1588]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_10_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1602]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_11_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1616]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_12_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1630]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_13_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1644]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_14_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1658]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_15_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1672]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_16_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1686]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_17_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1700]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_18_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1714]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_19_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1728]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_20_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1742]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_21_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1756]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_22_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1770]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_23_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1784]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_24_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1798]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_25_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1812]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_26_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1826]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_27_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1840]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_28_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1854]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_29_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1868]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_30_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1882]
+INFO: [Synth 8-3491] module 'HLS_accel_a_0' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_a_0.vhd:77' bound to instance 'b_31_U' of component 'HLS_accel_a_0' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1896]
+INFO: [Synth 8-3491] module 'HLS_accel_out' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_out.vhd:77' bound to instance 'out_U' of component 'HLS_accel_out' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1910]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_out' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_out.vhd:92]
+INFO: [Synth 8-3491] module 'HLS_accel_out_ram' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_out.vhd:13' bound to instance 'HLS_accel_out_ram_U' of component 'HLS_accel_out_ram' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_out.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_out_ram' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_out.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_out_ram' (4#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_out.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_out' (5#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_out.vhd:92]
+INFO: [Synth 8-3491] module 'mmult_hw_float_32_s' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:12' bound to instance 'grp_mmult_hw_float_32_s_fu_1278' of component 'mmult_hw_float_32_s' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:1924]
+INFO: [Synth 8-638] synthesizing module 'mmult_hw_float_32_s' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:219]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:239]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:242]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:249]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1358]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U0' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1398]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:29]
+INFO: [Synth 8-3491] module 'HLS_accel_ap_fadd_3_full_dsp_32' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/ip/HLS_accel_ap_fadd_3_full_dsp_32.vhd:59' bound to instance 'HLS_accel_ap_fadd_3_full_dsp_32_u' of component 'HLS_accel_ap_fadd_3_full_dsp_32' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_ap_fadd_3_full_dsp_32' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/ip/HLS_accel_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/ad02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/ip/HLS_accel_ap_fadd_3_full_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_ap_fadd_3_full_dsp_32' (23#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/ip/HLS_accel_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_fadd_32bkb' (24#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:29]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U1' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1413]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U2' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1428]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U3' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1443]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U4' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1458]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U5' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1473]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U6' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1488]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U7' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1503]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U8' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1518]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U9' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1533]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U10' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1548]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U11' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1563]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U12' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1578]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U13' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1593]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U14' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1608]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U15' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1623]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U16' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1638]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U17' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1653]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U18' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1668]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U19' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1683]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U20' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1698]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U21' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1713]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U22' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1728]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U23' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1743]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U24' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1758]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U25' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1773]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U26' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1788]
+INFO: [Synth 8-3491] module 'HLS_accel_fadd_32bkb' declared at 'd:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fadd_32bkb.vhd:11' bound to instance 'HLS_accel_fadd_32bkb_U27' of component 'HLS_accel_fadd_32bkb' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:1803]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_fmul_32cud' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fmul_32cud.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'HLS_accel_ap_fmul_2_max_dsp_32' [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/ip/HLS_accel_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_ap_fmul_2_max_dsp_32' (32#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/ip/HLS_accel_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel_fmul_32cud' (33#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel_fmul_32cud.vhd:29]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter164_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4738]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter163_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4735]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter162_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4732]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter161_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4729]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter160_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4726]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter159_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4717]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter158_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4713]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter157_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4709]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter156_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4705]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter155_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4701]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter154_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4698]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter153_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4695]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter152_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4692]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter151_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4689]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter150_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4686]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter149_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4677]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter148_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4672]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter147_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4667]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter146_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4662]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter145_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4657]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter144_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4652]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter143_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4647]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter142_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4642]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter141_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4637]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter140_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4632]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter139_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4622]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter138_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4617]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter137_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4612]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter136_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4607]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter135_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4602]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter134_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4597]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter133_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4592]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter132_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4587]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter131_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4582]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter130_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4577]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter129_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4567]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter128_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4562]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter127_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4557]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter126_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4552]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter125_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4547]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter124_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4542]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter123_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4537]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter122_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4532]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter121_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4527]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter120_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4522]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter119_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4512]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter118_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4507]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter117_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4502]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter116_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4497]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter115_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4492]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter114_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4487]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter113_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4482]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter112_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4477]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter111_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4472]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter110_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4467]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter109_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4457]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter108_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4452]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter107_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4447]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter106_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4442]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter105_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4437]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter104_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4432]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter103_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4427]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter102_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4422]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter101_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4417]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter100_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4412]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter99_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:4412]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter98_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5187]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter97_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5182]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter96_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5177]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter95_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5172]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter94_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5167]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter93_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5162]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter92_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5157]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter91_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5152]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter90_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5147]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter89_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5137]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter88_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5132]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter87_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5127]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter86_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5122]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter85_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5117]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter84_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5112]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter83_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5107]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter82_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5102]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter81_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5097]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter80_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5092]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter79_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5082]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter78_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5077]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter77_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5072]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter76_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5067]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter75_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5062]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter74_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5057]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter73_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5052]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter72_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5047]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter71_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5042]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter70_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5037]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter69_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5027]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter68_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5022]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter67_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5017]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter66_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5012]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ap_pipeline_reg_pp0_iter65_ia_cast2_mid2_v_reg_1401_reg' and it is trimmed from '6' to '5' bits. [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:5007]
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'mmult_hw_float_32_s' (34#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/mmult_hw_float_32_s.vhd:219]
+INFO: [Synth 8-256] done synthesizing module 'HLS_accel' (35#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ipshared/9478/hdl/vhdl/HLS_accel.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'system_HLS_accel_1_0' (36#1) [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/synth/system_HLS_accel_1_0.vhd:99]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port SINIT
+WARNING: [Synth 8-3331] design dsp48e1_wrapper__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_dsp_opt_full has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SINIT
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 452.262 ; gain = 242.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 452.262 ; gain = 242.004
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3520 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/constraints/HLS_accel_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/constraints/HLS_accel_ooc.xdc] for cell 'U0'
+Parsing XDC File [D:/CENG3430/Lab09_1/Lab09_1.runs/system_HLS_accel_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/CENG3430/Lab09_1/Lab09_1.runs/system_HLS_accel_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  FDE => FDRE: 96 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.746 . Memory (MB): peak = 965.176 ; gain = 11.031
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_1324_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_1306_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_1351_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten1_fu_1472_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten2_fu_1593_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_i_fu_1490_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_i_fu_1611_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond4_i_fu_1369_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "INPUT_STREAM_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OUTPUT_STREAM_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OUTPUT_STREAM_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |mmult_hw_float_32_s__GB0 |           1|     34249|
+|2     |mmult_hw_float_32_s__GB1 |           1|     10365|
+|3     |mmult_hw_float_32_s__GB2 |           1|     11975|
+|4     |HLS_accel__GC0           |           1|      1903|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_mid2_reg_1396_reg[0]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_mid2_reg_1396_reg[1]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_mid2_reg_1396_reg[2]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_mid2_reg_1396_reg[3]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_mid2_reg_1396_reg[4]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_cast1_reg_1442_reg[5]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_mid2_reg_1396_reg[0]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_mid2_reg_1396_reg[1]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_mid2_reg_1396_reg[2]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_mid2_reg_1396_reg[3]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_mid2_reg_1396_reg[4]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_cast1_reg_1442_reg[5]' (FDE) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter1_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter2_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter3_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter4_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter5_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter6_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter7_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter8_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter9_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter10_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter11_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter12_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter13_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter14_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_cast1_reg_1442_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_mid2_reg_1396_reg[4]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_cast1_reg_1442_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_cast1_reg_1442_reg[5]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter15_ib_mid2_reg_1396_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter16_ib_mid2_reg_1396_reg[0]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter16_ib_cast1_reg_1442_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter16_ib_mid2_reg_1396_reg[1]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter16_ib_cast1_reg_1442_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter16_ib_mid2_reg_1396_reg[2]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter16_ib_cast1_reg_1442_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter16_ib_mid2_reg_1396_reg[3]' (FD) to 'U0/grp_mmult_hw_float_32_s_fu_1278i_3_0/ap_pipeline_reg_pp0_iter16_ib_cast1_reg_1442_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__2.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__2.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__4.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__4.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__5.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__5.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__6.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__6.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__7.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__7.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__8.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__8.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__9.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__9.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__10.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__10.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__11.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__11.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__12.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__12.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__13.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__13.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__14.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__14.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__15.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__15.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__16.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__16.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__17.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__17.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__18.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__18.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__19.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__19.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__2.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__4.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__5.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__6.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__7.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__8.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__9.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__10.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__11.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__12.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__13.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__14.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__15.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__16.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__17.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__18.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__19.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__20.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__21.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__22.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__23.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__24.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__22.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__22.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__23.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__23.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__24.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__24.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__25.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__25.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/din1_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/grp_mmult_hw_float_32_s_fu_1278i_3_2/\HLS_accel_fadd_32bkb_U0/HLS_accel_ap_fadd_3_full_dsp_32_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12] )
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__25.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__26.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__27.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__28.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__29.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__30.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__31.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__26.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__26.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__27.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__27.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__28.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__28.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__29.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__29.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__30.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__30.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__31.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__31.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12]) is unused and will be removed from module floating_point_v7_1_3_viv.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_3_3/\HLS_accel_CONTROL_BUS_s_axi_U/rdata_data_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_3_3/\HLS_accel_CONTROL_BUS_s_axi_U/wstate_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |mmult_hw_float_32_s__GB0 |           1|     31823|
+|2     |mmult_hw_float_32_s__GB1 |           1|      9839|
+|3     |mmult_hw_float_32_s__GB2 |           1|     11173|
+|4     |HLS_accel__GC0           |           1|      2222|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:37 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |mmult_hw_float_32_s__GB0 |           1|     31823|
+|2     |mmult_hw_float_32_s__GB1 |           1|      9839|
+|3     |mmult_hw_float_32_s__GB2 |           1|     11173|
+|4     |HLS_accel__GC0           |           1|      2222|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/out_U/HLS_accel_out_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:53 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:53 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:02:00 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:55 ; elapsed = 00:02:01 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    96|
+|2     |DSP48E1   |    32|
+|3     |DSP48E1_1 |    32|
+|4     |DSP48E1_2 |    32|
+|5     |DSP48E1_3 |    32|
+|6     |DSP48E1_4 |    32|
+|7     |LUT1      |   171|
+|8     |LUT2      |  1433|
+|9     |LUT3      |  3462|
+|10    |LUT4      |  2067|
+|11    |LUT5      |  2478|
+|12    |LUT6      |  2629|
+|13    |MUXCY     |  2368|
+|14    |RAMB18E1  |    64|
+|15    |RAMB36E1  |     1|
+|16    |SRL16E    |   400|
+|17    |SRLC32E   |    36|
+|18    |XORCY     |   800|
+|19    |FDE       |    96|
+|20    |FDRE      |  9827|
+|21    |FDSE      |     3|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:55 ; elapsed = 00:02:01 . Memory (MB): peak = 965.176 ; gain = 754.918
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 965.176 ; gain = 202.145
+Synthesis Optimization Complete : Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 965.176 ; gain = 754.918
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3585 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/constraints/HLS_accel_ooc.xdc] for cell 'U0'
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/constraints/HLS_accel_ooc.xdc:6]
+Finished Parsing XDC File [d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/constraints/HLS_accel_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 742 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 640 instances
+  FDE => FDRE: 96 instances
+  SRLC32E => SRL16E: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+501 Infos, 200 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:06 ; elapsed = 00:02:09 . Memory (MB): peak = 965.176 ; gain = 715.059
+INFO: [Common 17-1381] The checkpoint 'D:/CENG3430/Lab09_1/Lab09_1.runs/system_HLS_accel_1_0_synth_1/system_HLS_accel_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/CENG3430/Lab09_1/Lab09_1.srcs/sources_1/bd/system/ip/system_HLS_accel_1_0/system_HLS_accel_1_0.xci
+INFO: [Coretcl 2-1174] Renamed 3357 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/CENG3430/Lab09_1/Lab09_1.runs/system_HLS_accel_1_0_synth_1/system_HLS_accel_1_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 965.176 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 27 01:38:39 2022...

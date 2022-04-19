@@ -1,0 +1,28 @@
+01:54:51 **** Incremental Build of configuration Release for project mmult ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: mmult.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mmult_bsp/ps7_cortexa9_0/lib -o "mmult.elf"  ./src/lib_xmmult_hw.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mmult.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mmult.elf  |tee "mmult.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41372	   2812	  28488	  72672	  11be0	mmult.elf
+'Finished building: mmult.elf.size'
+' '
+
+01:54:51 Build Finished (took 463ms)
+
+01:54:51 **** Incremental Build of configuration Debug for project mmult ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:54:59 **** Incremental Build of configuration Debug for project mmult ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

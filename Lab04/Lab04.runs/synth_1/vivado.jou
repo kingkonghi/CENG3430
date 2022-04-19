@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Feb 18 21:21:59 2022
+# Process ID: 22868
+# Current directory: D:/CENG3430/Lab04/Lab04.runs/synth_1
+# Command line: vivado.exe -log lab04.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab04.tcl
+# Log file: D:/CENG3430/Lab04/Lab04.runs/synth_1/lab04.vds
+# Journal file: D:/CENG3430/Lab04/Lab04.runs/synth_1\vivado.jou
+# Running On: DESKTOP-2D4IHUT, OS: Windows, CPU Frequency: 4050 MHz, CPU Physical cores: 16, Host memory: 17090 MB
+#-----------------------------------------------------------
+source lab04.tcl -notrace

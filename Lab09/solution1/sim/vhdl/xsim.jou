@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Mar 27 01:29:42 2022
+# Process ID: 55908
+# Current directory: D:/CENG3430/Lab09/solution1/sim/vhdl
+# Command line: xsim.exe -mode tcl -source {xsim.dir/standalone_mmult/xsim_script.tcl}
+# Log file: D:/CENG3430/Lab09/solution1/sim/vhdl/xsim.log
+# Journal file: D:/CENG3430/Lab09/solution1/sim/vhdl\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/standalone_mmult/xsim_script.tcl
+source standalone_mmult.tcl
