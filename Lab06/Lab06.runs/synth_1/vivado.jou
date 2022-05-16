@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sat Mar  5 00:28:50 2022
-# Process ID: 14380
+# Start of session at: Mon May 16 16:52:09 2022
+# Process ID: 14304
 # Current directory: D:/CENG3430/Lab06/Lab06.runs/synth_1
 # Command line: vivado.exe -log lab06.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab06.tcl
 # Log file: D:/CENG3430/Lab06/Lab06.runs/synth_1/lab06.vds
