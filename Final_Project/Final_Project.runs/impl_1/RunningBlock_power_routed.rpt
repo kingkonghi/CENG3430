@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date             : Tue May 17 13:41:00 2022
+| Date             : Tue May 17 14:00:27 2022
 | Host             : DESKTOP-2D4IHUT running 64-bit major release  (build 9200)
 | Command          : report_power -file RunningBlock_power_routed.rpt -pb RunningBlock_power_summary_routed.pb -rpx RunningBlock_power_routed.rpx
 | Design           : RunningBlock
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.124        |
+| Total On-Chip Power (W)  | 0.109        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.018        |
+| Dynamic (W)              | 0.003        |
 | Device Static (W)        | 0.106        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 83.6         |
-| Junction Temperature (C) | 26.4         |
+| Max Ambient (C)          | 83.7         |
+| Junction Temperature (C) | 26.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.002 |        3 |       --- |             --- |
-| Slice Logic             |     0.009 |    10768 |       --- |             --- |
-|   LUT as Logic          |     0.008 |     7657 |     53200 |           14.39 |
-|   CARRY4                |    <0.001 |     1416 |     13300 |           10.65 |
-|   Register              |    <0.001 |      467 |    106400 |            0.44 |
-|   F7/F8 Muxes           |    <0.001 |        3 |     53200 |           <0.01 |
+| Slice Logic             |    <0.001 |    11530 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |     8237 |     53200 |           15.48 |
+|   CARRY4                |    <0.001 |     1509 |     13300 |           11.35 |
+|   Register              |    <0.001 |      468 |    106400 |            0.44 |
 |   LUT as Shift Register |    <0.001 |        1 |     17400 |           <0.01 |
 |   Others                |     0.000 |       10 |       --- |             --- |
 |   BUFG                  |     0.000 |        3 |        32 |            9.38 |
-| Signals                 |     0.007 |     8924 |       --- |             --- |
+|   F7/F8 Muxes           |     0.000 |        1 |     53200 |           <0.01 |
+| Signals                 |    <0.001 |     9613 |       --- |             --- |
 | I/O                     |    <0.001 |       34 |       200 |           17.00 |
 | Static Power            |     0.106 |          |           |                 |
-| Total                   |     0.124 |          |           |                 |
+| Total                   |     0.109 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.026 |       0.018 |      0.007 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.011 |       0.003 |      0.007 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -150,7 +150,7 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| RunningBlock |     0.018 |
+| RunningBlock |     0.003 |
 +--------------+-----------+
 
 

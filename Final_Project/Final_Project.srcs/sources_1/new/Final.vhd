@@ -249,6 +249,7 @@ type colors is (C_Black, C_DarkGreen, C_LightGreen, C_Red, C_White, C_Pink);
     constant itemA : integer := 10;
     constant itemB : integer := 5;    
     signal coin : std_logic := '1';
+    signal running : std_logic := '0';
     signal count : integer := 0;
     signal rotate1: integer :=0;
     signal rotate2: integer :=0;
@@ -321,18 +322,17 @@ begin
             if btnu ='1' then
                 s_mode <=not s_mode;
             elsif btnc = '1' then
-                if  s_mode ='0' and insert >= itemA then
+                if  s_mode ='0' and insert >= itemA and running ='0'then
                     insert <= insert - itemA;
                     state<= 1;
                     motor(0)<='1';
-                    
-                elsif s_mode ='1' and insert >= itemB then
+                    running<='1';
+                elsif s_mode ='1' and insert >= itemB and running ='0'then
                     insert <= insert - itemB;
                     state<=2;
                     motor(1)<='1';
-                    
-                elsif insert <itemA and insert <itemB then
-                    state<=3;
+                    running<='1';
+                else state<=3;
                 end if;
             elsif btnr = '1' then
                 if insert >0 then
@@ -348,10 +348,13 @@ begin
                 insert <= insert +1;
             elsif(rotate1 = 2100) then
                 motor(0)<='0';
-                elsif(rotate2 = 2100) then
-                    motor(1)<='0';  
+                running<='0';
+            elsif(rotate2 = 2100) then
+                    motor(1)<='0';
+                    running<='0';
                 elsif(rotate3 = 2100) then
                     motor(2)<='0';
+                   running<='0';
                     else
             end if;
             
@@ -518,6 +521,8 @@ begin
                 end case;
             elsif(hcount>H_START+350 and hcount<=H_START+400 and vcount > V_START+400 and vcount <V_START+460 and coin ='0') then
                 color <= error((vcount-V_START-400)/ratio,(hcount-H_START-350)/ratio);
+            elsif(hcount>H_START+300 and hcount<=H_START+350 and vcount > V_START+460 and vcount <V_START+520 and running='1') then
+                color <= dot((vcount-V_START-460)/ratio,(hcount-H_START-300)/ratio);
             else
                 color <= C_Pink;
             end if;
