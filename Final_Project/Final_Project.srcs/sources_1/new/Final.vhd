@@ -66,6 +66,12 @@ architecture RunningBlock_arch of RunningBlock is
             clk_out : out std_logic
         );
     end component;
+    component clk_100hz is
+        port (
+            clk : in std_logic;
+            clk_out : out std_logic
+        );
+    end component;
     
   --for light sensor
     COMPONENT spi_master
@@ -236,22 +242,21 @@ type colors is (C_Black, C_DarkGreen, C_LightGreen, C_Red, C_White, C_Pink);
     signal color : colors;
     
     --for money
-    signal clk_1, clk_4 : std_logic;
+    signal clk_1, clk_4 ,clk_100,clk_100a,clk_100b: std_logic;
     signal s_mode : std_logic := '0';
     signal insert : integer := 0;
     signal state : integer := 0;
     constant itemA : integer := 10;
     constant itemB : integer := 5;    
     signal coin : std_logic := '1';
-    signal clk_100Hz: STD_LOGIC := '0';
     signal count : integer := 0;
     signal rotate1: integer :=0;
     signal rotate2: integer :=0;
     signal rotate3: integer :=0;
-    signal motor: integer:=0;
-    signal motor_state: integer :=0;
-    signal motor_stateB: integer :=0;
-    signal motor_stateC: integer :=0;
+    signal motor: STD_LOGIC_VECTOR(2 downto 0); 
+    signal motor_state1: integer :=0;
+    signal motor_state2: integer :=0;
+    signal motor_state3: integer :=0;
 begin
     --------- VGA UTILITY START ---------
     -- generate 50MHz clock
@@ -306,7 +311,7 @@ begin
     -- generate 1Hz, 50MHz clock
     u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk1Hz);
     u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk10Hz);
-
+    
     
  --button press
     u4 : clk_4hz port map(clk, clk_4);
@@ -319,18 +324,20 @@ begin
                 if  s_mode ='0' and insert >= itemA then
                     insert <= insert - itemA;
                     state<= 1;
-                    motor<=1;
+                    motor(0)<='1';
+                    
                 elsif s_mode ='1' and insert >= itemB then
                     insert <= insert - itemB;
                     state<=2;
-                    motor<=2;
+                    motor(1)<='1';
+                    
                 elsif insert <itemA and insert <itemB then
                     state<=3;
                 end if;
             elsif btnr = '1' then
                 if insert >0 then
-                insert <= insert -1;
-                motor<=3;
+                    insert <= insert -1;
+                    motor(2)<='1';
                 elsif insert <0 then
                 insert <= 0;
                 end if;
@@ -339,101 +346,83 @@ begin
             elsif(light(11 downto 7) = 0 and coin ='0') then
                 coin <='1';
                 insert <= insert +1;
-            else
+            elsif(rotate1 = 2100) then
+                motor(0)<='0';
+                elsif(rotate2 = 2100) then
+                    motor(1)<='0';  
+                elsif(rotate3 = 2100) then
+                    motor(2)<='0';
+                    else
             end if;
+            
         end if;
 
     end process;
     
-    
+    u100 : clk_100hz port map(clk, clk_100);
+    u100a : clk_100hz port map(clk, clk_100a);
+    u100b : clk_100hz port map(clk, clk_100b);    
     -- For MotorA,B,C
-    process(clk) begin
-        if rising_edge(clk) then
-            if (count = (200000 - 1)) then
-                clk_100Hz <= not clk_100Hz;
-                count<=0;
-                else  
-                    count<=count+1;
+    process(clk_100,motor_state1,rotate1)
+    begin
+        if rising_edge (clk_100) then
+            if (motor(0)='1')then
+                if(rotate1 < 2100) then
+                    rotate1<=rotate1+1;
+                else
+                    rotate1<=0;
+                end if;
+                
+                case motor_state1 is
+                    when 0 => motorA <= "0001"; motor_state1 <= motor_state1+1;
+                    when 1 => motorA <= "0010"; motor_state1 <= motor_state1+1;
+                    when 2 => motorA <= "0100"; motor_state1 <= motor_state1+1;
+                    when others => motorA <= "1000"; motor_state1 <= 0;
+                end case;
+            else rotate1<=0;
             end if;
-         end if;
+        end if;
+    end process;            
+    
+    process(clk_100a,motor_state2,rotate2)
+    begin
+        if rising_edge (clk_100a) then
+            if (motor(1)='1')then
+                if(rotate2 < 2100) then
+                    rotate2<=rotate2+1;
+                else
+                    rotate2<=0;
+                end if;
+                case motor_state2 is
+                    when 0 => motorB <= "0001"; motor_state2 <= motor_state2+1;
+                    when 1 => motorB <= "0010"; motor_state2 <= motor_state2+1;
+                    when 2 => motorB <= "0100"; motor_state2 <= motor_state2+1;
+                    when others => motorB <= "1000"; motor_state2 <= 0;
+                end case;
+            else rotate2<=0;
+            end if;
+        end if;
     end process;
     
-    process(clk_100Hz, state) begin
-        if(rising_edge(clk_100Hz) ) then
-                if(rotate1 = 2100) or (rotate2 = 2100) or (rotate3 = 2100) then
-                    motor<=0;
-           elsif(motor=1  ) then
-                     if(rotate1 < 2100) then
-                          rotate1<=rotate1+1;
-                     else
-                     rotate1<=0;
-                     end if;
-                    
-                    if(motor_state = 0 )then
-                            motor_state<=motor_state+1;
-                            motorA<="0001";
-                    elsif(motor_state = 1 )then
-                        motor_state<=motor_state+1;
-                        motorA<="0010";
-                    elsif(motor_state = 2 )then
-                        motor_state<=motor_state+1;
-                        motorA<="0100";
-                    elsif(motor_state = 3 )then
-                        motor_state<=0;
-                        motorA<="1000";
-                      else
-                    end if;
-
-              elsif(motor=2 ) then
-                        if(rotate2 < 2100) then
-                            rotate2<=rotate2+1;
-                       else
-                       rotate2<=0;
-                       end if;
-
-                  if(motor_stateB = 0 )then
-                          motor_stateB<=motor_stateB+1;
-                          motorB<="0001";
-                  elsif(motor_stateB = 1 )then
-                      motor_stateB<=motor_stateB+1;
-                      motorB<="0010";
-                  elsif(motor_stateB = 2 )then
-                      motor_stateB<=motor_stateB+1;
-                      motorB<="0100";
-                  elsif(motor_stateB = 3 )then
-                      motor_stateB<=0;
-                      motorB<="1000";
-                    else
-                  end if;
-
-                elsif(motor=3 ) then
-                    if(rotate3 < 2100) then
-                        rotate3<=rotate3+1;
-                    else
-                        rotate3<=0;
-                       end if;
-
-                      if(motor_stateC = 0 )then
-                              motor_stateC<=motor_stateC+1;
-                              motorC<="0001";
-                      elsif(motor_stateC = 1 )then
-                          motor_stateC<=motor_stateC+1;
-                          motorC<="0010";
-                      elsif(motor_stateC = 2 )then
-                          motor_stateC<=motor_stateC+1;
-                          motorC<="0100";
-                      elsif(motor_stateC = 3 )then
-                          motor_stateC<=0;
-                          motorC<="1000";
-                        else
-                      end if;
-                         
-                   else
-                    end if;                
-              else
-           end if;
-        end process;
-
+    process(clk_100b,motor_state3,rotate3)
+    begin
+        if rising_edge (clk_100b) then
+            if (motor(2)='1')then
+                if(rotate3 < 2100) then
+                    rotate3<=rotate3+1;
+                else
+                    rotate3<=0;
+                end if;
+                case motor_state3 is
+                    when 0 => motorC <= "0001"; motor_state3 <= motor_state3+1;
+                    when 1 => motorC <= "0010"; motor_state3 <= motor_state3+1;
+                    when 2 => motorC <= "0100"; motor_state3 <= motor_state3+1;
+                    when others => motorC <= "1000"; motor_state3 <= 0;
+                end case;
+            else rotate3<=0;
+            end if;
+        end if;
+    end process;
     -- select the correct color of the pixel (hcount, vcount).
     process (hcount, vcount)
     begin
