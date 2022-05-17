@@ -4,19 +4,27 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 use IEEE.Numeric_Std.ALL;
 
 entity RunningBlock is
+    
     port (
         clk : in std_logic;
+    --button
         btnc,btnd,btnr,btnu,btnl: in std_logic;
+    --VGA monitor
         hsync, vsync : out std_logic;
         red, green, blue : out std_logic_vector(3 downto 0);
         Reset: in std_logic;
         
+    --light Sensor
     cs      : BUFFER STD_LOGIC_VECTOR(0 DOWNTO 0);
     mosi    : OUT   STD_LOGIC;
     miso    : IN    STD_LOGIC;
     sclk    : BUFFER STD_LOGIC;
     data    :in std_logic_vector(7 downto 0);
-    switch  : IN STD_LOGIC_VECTOR(7 downto 0)
+    
+    switch  : IN STD_LOGIC_VECTOR(7 downto 0);
+    --MOTOR STUFF
+    motorA, motorB, motorC  : OUT STD_LOGIC_VECTOR (3 downto 0)
+
     );
 end RunningBlock;
 
@@ -235,7 +243,15 @@ type colors is (C_Black, C_DarkGreen, C_LightGreen, C_Red, C_White, C_Pink);
     constant itemA : integer := 10;
     constant itemB : integer := 5;    
     signal coin : std_logic := '1';
-    
+    signal clk_100Hz: STD_LOGIC := '0';
+    signal count : integer := 0;
+    signal rotate1: integer :=0;
+    signal rotate2: integer :=0;
+    signal rotate3: integer :=0;
+    signal motor: integer:=0;
+    signal motor_state: integer :=0;
+    signal motor_stateB: integer :=0;
+    signal motor_stateC: integer :=0;
 begin
     --------- VGA UTILITY START ---------
     -- generate 50MHz clock
@@ -291,6 +307,7 @@ begin
     u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk1Hz);
     u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk10Hz);
 
+    
  --button press
     u4 : clk_4hz port map(clk, clk_4);
     coins: process(clk_4,btnc,btnd,btnr)
@@ -298,25 +315,22 @@ begin
         if rising_edge (clk_4) then
             if btnu ='1' then
                 s_mode <=not s_mode;
-            elsif btnl = '1' then
-                if  insert <99 then
-                    insert <= insert +1;
-                else 
-                    insert <=0;
-                end if;
             elsif btnc = '1' then
                 if  s_mode ='0' and insert >= itemA then
                     insert <= insert - itemA;
                     state<= 1;
+                    motor<=1;
                 elsif s_mode ='1' and insert >= itemB then
                     insert <= insert - itemB;
                     state<=2;
+                    motor<=2;
                 elsif insert <itemA and insert <itemB then
                     state<=3;
                 end if;
             elsif btnr = '1' then
                 if insert >0 then
                 insert <= insert -1;
+                motor<=3;
                 elsif insert <0 then
                 insert <= 0;
                 end if;
@@ -330,7 +344,95 @@ begin
         end if;
 
     end process;
-        
+    
+    
+    -- For MotorA,B,C
+    process(clk) begin
+        if rising_edge(clk) then
+            if (count = (200000 - 1)) then
+                clk_100Hz <= not clk_100Hz;
+                count<=0;
+                else  
+                    count<=count+1;
+            end if;
+         end if;
+    end process;
+    
+    process(clk_100Hz, state) begin
+        if(rising_edge(clk_100Hz) ) then
+                if(rotate1 = 2100) or (rotate2 = 2100) or (rotate3 = 2100) then
+                    motor<=0;
+           elsif(motor=1  ) then
+                     if(rotate1 < 2100) then
+                          rotate1<=rotate1+1;
+                     else
+                     rotate1<=0;
+                     end if;
+                    
+                    if(motor_state = 0 )then
+                            motor_state<=motor_state+1;
+                            motorA<="0001";
+                    elsif(motor_state = 1 )then
+                        motor_state<=motor_state+1;
+                        motorA<="0010";
+                    elsif(motor_state = 2 )then
+                        motor_state<=motor_state+1;
+                        motorA<="0100";
+                    elsif(motor_state = 3 )then
+                        motor_state<=0;
+                        motorA<="1000";
+                      else
+                    end if;
+
+              elsif(motor=2 ) then
+                        if(rotate2 < 2100) then
+                            rotate2<=rotate2+1;
+                       else
+                       rotate2<=0;
+                       end if;
+
+                  if(motor_stateB = 0 )then
+                          motor_stateB<=motor_stateB+1;
+                          motorB<="0001";
+                  elsif(motor_stateB = 1 )then
+                      motor_stateB<=motor_stateB+1;
+                      motorB<="0010";
+                  elsif(motor_stateB = 2 )then
+                      motor_stateB<=motor_stateB+1;
+                      motorB<="0100";
+                  elsif(motor_stateB = 3 )then
+                      motor_stateB<=0;
+                      motorB<="1000";
+                    else
+                  end if;
+
+                elsif(motor=3 ) then
+                    if(rotate3 < 2100) then
+                        rotate3<=rotate3+1;
+                    else
+                        rotate3<=0;
+                       end if;
+
+                      if(motor_stateC = 0 )then
+                              motor_stateC<=motor_stateC+1;
+                              motorC<="0001";
+                      elsif(motor_stateC = 1 )then
+                          motor_stateC<=motor_stateC+1;
+                          motorC<="0010";
+                      elsif(motor_stateC = 2 )then
+                          motor_stateC<=motor_stateC+1;
+                          motorC<="0100";
+                      elsif(motor_stateC = 3 )then
+                          motor_stateC<=0;
+                          motorC<="1000";
+                        else
+                      end if;
+                         
+                   else
+                    end if;                
+              else
+           end if;
+        end process;
 
     -- select the correct color of the pixel (hcount, vcount).
     process (hcount, vcount)

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date             : Mon May 16 17:41:46 2022
+| Date             : Tue May 17 11:52:07 2022
 | Host             : DESKTOP-2D4IHUT running 64-bit major release  (build 9200)
 | Command          : report_power -file RunningBlock_power_routed.rpt -pb RunningBlock_power_summary_routed.pb -rpx RunningBlock_power_routed.rpx
 | Design           : RunningBlock
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.128        |
+| Total On-Chip Power (W)  | 0.129        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.022        |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.002 |        3 |       --- |             --- |
-| Slice Logic             |     0.011 |    10260 |       --- |             --- |
-|   LUT as Logic          |     0.010 |     7472 |     53200 |           14.05 |
-|   CARRY4                |    <0.001 |     1351 |     13300 |           10.16 |
-|   Register              |    <0.001 |      232 |    106400 |            0.22 |
+| Clocks                  |     0.001 |        3 |       --- |             --- |
+| Slice Logic             |     0.011 |    10219 |       --- |             --- |
+|   LUT as Logic          |     0.010 |     7435 |     53200 |           13.98 |
+|   CARRY4                |    <0.001 |     1348 |     13300 |           10.14 |
+|   Register              |    <0.001 |      227 |    106400 |            0.21 |
 |   LUT as Shift Register |    <0.001 |        1 |     17400 |           <0.01 |
 |   Others                |     0.000 |        8 |       --- |             --- |
 |   BUFG                  |     0.000 |        2 |        32 |            6.25 |
-| Signals                 |     0.009 |     8490 |       --- |             --- |
-| I/O                     |    <0.001 |       23 |       200 |           11.50 |
+| Signals                 |     0.010 |     8469 |       --- |             --- |
+| I/O                     |    <0.001 |       34 |       200 |           17.00 |
 | Static Power            |     0.106 |          |           |                 |
-| Total                   |     0.128 |          |           |                 |
+| Total                   |     0.129 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -146,11 +146,10 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------+-----------+
-| Name           | Power (W) |
-+----------------+-----------+
-| RunningBlock   |     0.022 |
-|   spi_master_0 |     0.001 |
-+----------------+-----------+
++--------------+-----------+
+| Name         | Power (W) |
++--------------+-----------+
+| RunningBlock |     0.022 |
++--------------+-----------+
 
 
