@@ -26,14 +26,11 @@ set_property IOSTANDARD LVCMOS33 [get_ports motorC];
 #button
 set_property PACKAGE_PIN P16 [get_ports {btnc}];
 set_property IOSTANDARD LVCMOS25 [get_ports btnc];
-set_property PACKAGE_PIN R16 [get_ports {btnd}];
-set_property IOSTANDARD LVCMOS25 [get_ports btnd];
+
 set_property PACKAGE_PIN R18 [get_ports {btnr}];
 set_property IOSTANDARD LVCMOS25 [get_ports btnr];
 set_property PACKAGE_PIN T18 [get_ports {btnu}];
 set_property IOSTANDARD LVCMOS25 [get_ports btnu];
-set_property PACKAGE_PIN N15 [get_ports {btnl}];
-set_property IOSTANDARD LVCMOS25 [get_ports btnl];
 
 #light sensor
 set_property PACKAGE_PIN W7 [get_ports mosi];

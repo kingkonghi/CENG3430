@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Tue May 17 13:59:42 2022
+| Date         : Tue May 17 21:05:22 2022
 | Host         : DESKTOP-2D4IHUT running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file RunningBlock_control_sets_placed.rpt
 | Design       : RunningBlock
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              28 |           16 |
+| No           | No                    | No                     |              28 |           14 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |             248 |           65 |
-| Yes          | No                    | No                     |             123 |           52 |
+| Yes          | No                    | No                     |             123 |           50 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              69 |           18 |
+| Yes          | Yes                   | No                     |              69 |           19 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,14 +73,14 @@ Table of Contents
 +----------------+------------------------------------+-------------------------------------+------------------+----------------+--------------+
 |  Clock Signal  |            Enable Signal           |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+------------------------------------+-------------------------------------+------------------+----------------+--------------+
-|  pulse_BUFG    |                                    |                                     |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | spi_master_0/busy1                 | spi_master_0/clk_toggles[4]_i_1_n_0 |                1 |              5 |         5.00 |
-|  clk_IBUF_BUFG | spi_master_0/rx_data[11]_i_1_n_0   |                                     |                2 |              7 |         3.50 |
-|  clk_4_BUFG    |                                    |                                     |                6 |              8 |         1.33 |
+|  pulse_BUFG    |                                    |                                     |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | spi_master_0/busy1                 | spi_master_0/clk_toggles[4]_i_1_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | spi_master_0/rx_data[11]_i_1_n_0   |                                     |                5 |              7 |         1.40 |
+|  clk_4_BUFG    |                                    |                                     |                4 |              8 |         2.00 |
 |  clk_IBUF_BUFG | spi_master_0/rx_buffer[11]_i_1_n_0 |                                     |                4 |              9 |         2.25 |
-|  clk_IBUF_BUFG |                                    |                                     |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG |                                    |                                     |                7 |             16 |         2.29 |
 |  clk_IBUF_BUFG |                                    | spi_master_0/assert_data            |                8 |             28 |         3.50 |
-|  pulse_BUFG    |                                    | hcount[31]_i_1_n_0                  |                9 |             31 |         3.44 |
+|  pulse_BUFG    |                                    | vcount                              |                9 |             31 |         3.44 |
 |  clk_IBUF_BUFG |                                    | u100/pulse                          |                8 |             31 |         3.88 |
 |  clk_IBUF_BUFG |                                    | u4/pulse                            |                8 |             31 |         3.88 |
 |  clk_IBUF_BUFG |                                    | u_clk50mhz/pulse_0                  |                8 |             31 |         3.88 |
@@ -89,9 +89,9 @@ Table of Contents
 |  clk_100_BUFG  |                                    | rotate2[0]_i_1_n_0                  |                8 |             32 |         4.00 |
 |  clk_100_BUFG  |                                    | rotate3[0]_i_1_n_0                  |                8 |             32 |         4.00 |
 |  clk_4_BUFG    | spi_master_0/sel                   | clear                               |                8 |             32 |         4.00 |
-|  clk_100_BUFG  | motor_reg_n_0_[1]                  |                                     |               14 |             36 |         2.57 |
-|  clk_100_BUFG  | motor_reg_n_0_[0]                  |                                     |               17 |             36 |         2.12 |
-|  clk_100_BUFG  | p_0_in                             |                                     |               15 |             36 |         2.40 |
+|  clk_100_BUFG  | p_0_in                             |                                     |               14 |             36 |         2.57 |
+|  clk_100_BUFG  | motor_reg_n_0_[1]                  |                                     |               13 |             36 |         2.77 |
+|  clk_100_BUFG  | motor_reg_n_0_[0]                  |                                     |               14 |             36 |         2.57 |
 +----------------+------------------------------------+-------------------------------------+------------------+----------------+--------------+
 
 

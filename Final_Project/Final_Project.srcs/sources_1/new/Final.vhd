@@ -19,9 +19,7 @@ entity RunningBlock is
     mosi    : OUT   STD_LOGIC;
     miso    : IN    STD_LOGIC;
     sclk    : BUFFER STD_LOGIC;
-    data    :in std_logic_vector(7 downto 0);
     
-    switch  : IN STD_LOGIC_VECTOR(7 downto 0);
     --MOTOR STUFF
     motorA, motorB, motorC  : OUT STD_LOGIC_VECTOR (3 downto 0)
 
@@ -343,16 +341,16 @@ begin
                 end if;
             elsif(light(11 downto 5) = 0 and coin ='1') then
                 coin <='0';
-            elsif(light(11 downto 7) = 0 and coin ='0') then
+            elsif (light(6)='1' or light(6)='1' or light(7)='1') and coin ='0' then
                 coin <='1';
                 insert <= insert +1;
-            elsif(rotate1 = 2100) then
+            elsif(rotate1 = 100) then
                 motor(0)<='0';
                 running<='0';
-            elsif(rotate2 = 2100) then
+            elsif(rotate2 = 100) then
                     motor(1)<='0';
                     running<='0';
-                elsif(rotate3 = 2100) then
+                elsif(rotate3 = 100) then
                     motor(2)<='0';
                    running<='0';
                     else
@@ -370,7 +368,7 @@ begin
     begin
         if rising_edge (clk_100) then
             if (motor(0)='1')then
-                if(rotate1 < 2100) then
+                if(rotate1 < 100) then
                     rotate1<=rotate1+1;
                 else
                     rotate1<=0;
@@ -391,7 +389,7 @@ begin
     begin
         if rising_edge (clk_100a) then
             if (motor(1)='1')then
-                if(rotate2 < 2100) then
+                if(rotate2 < 100) then
                     rotate2<=rotate2+1;
                 else
                     rotate2<=0;
@@ -411,7 +409,7 @@ begin
     begin
         if rising_edge (clk_100b) then
             if (motor(2)='1')then
-                if(rotate3 < 2100) then
+                if(rotate3 < 100) then
                     rotate3<=rotate3+1;
                 else
                     rotate3<=0;
